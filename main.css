@@ -138,14 +138,15 @@ html, body {
 }
 
 .data-button {
-    margin: 10%;
-    width: 75px;
-    height: 30px;
+    margin: 5%;
+    width: 100px;
+    height: 50px;
     border-radius: 25px;
     background-color: transparent;
     color: rgb(255, 255, 255);
     border-color: white;
     font-weight: 700;
+    font-size: larger;
     border-style: solid;
 }
 
@@ -263,7 +264,7 @@ html, body {
 
   @media only screen and (max-width: 768px) {
     .calendar {
-      margin-top: 25%;
+      margin-top: 15%;
       border-color: red;
       display: flex;
       width: 80%;
@@ -280,3 +281,27 @@ html, body {
     filter: drop-shadow(10px 12px 4px rgba(183, 179, 179, 0.294));
     }
   }
+
+  a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+.th {
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: red;
+}
+
+.calendar-title {
+  margin: 10%;
+  text-align: center;
+  font-family: Muli;
+  margin-bottom: 5%;
+}
