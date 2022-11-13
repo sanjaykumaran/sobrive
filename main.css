@@ -138,15 +138,15 @@ html, body {
 }
 
 .data-button {
-    margin: 5%;
+    margin: 3%;
     width: 100px;
-    height: 50px;
+    height: 40px;
     border-radius: 25px;
     background-color: transparent;
     color: rgb(255, 255, 255);
     border-color: white;
     font-weight: 700;
-    font-size: larger;
+    font-size: large;
     border-style: solid;
 }
 
@@ -258,10 +258,6 @@ html, body {
     margin-bottom: 5%;
   }
 
-  .empty {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
 
   @media only screen and (max-width: 768px) {
     .calendar {
@@ -299,4 +295,24 @@ a:active { text-decoration: none; }
   text-align: center;
   font-family: Muli;
   margin-bottom: 5%;
+}
+
+td {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.mark-fail {
+  border: 2px solid #f00;
+  border-radius: 50%;
+  border-width: 4px;
+}
+
+.mark-pass {
+  border: 2px solid green;
+  border-radius: 50%;
+  border-width: 4px;
 }
