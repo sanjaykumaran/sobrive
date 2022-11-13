@@ -1,47 +1,173 @@
+
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,500,700,900|Poppins:300,400,500,700,900&display=swap");
+@font-face {
+  font-family: 'ArchivoBlack-Regular';
+  src: url("./assets/ArchivoBlack-Regular.woff");
+}
+
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  .index-body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      margin: 0px;
+      animation: gradient 15s ease infinite;
+      color: rgb(255, 255, 255);
+      font-family: "Muli";
+  font-weight: 700;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
 .home-section {
     display: flex;
     padding: 10%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: -7%;
+}
+
+.game-body {
+  background-color: rgb(255, 255, 255);
+  margin: 0px;
+}
+
+.logo{
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+  .logo-pic {
+    margin-top: 5%;
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
     .home-section {
-        margin-top: 10%;
         display: flex;
         padding: 5%;
         flex-direction: column;
     }
   }
 
+.score-title {
+  font-size: 170%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .score-title {
+    font-size:160%;
+  }
+}
+
 .score-div {
     margin-top: 5%;
     border-color: red;
     display: flex;
+    width: 400px;
     align-items: center;
-    padding: 10%;
+    padding: 5%;
     flex-direction: column;
-    border-style: dashed;
     border-radius: 20px;
     border-width: 2px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  animation: gradient 15s ease infinite;
+  backdrop-filter: blur(5px);
+  filter: drop-shadow(10px 12px 4px rgba(183, 179, 179, 0.294));
+}
+
+.game-div {
+  margin-top: 5%;
+  width: 500px;
+  height: 500px;
+  background-color: skyblue;
+  border-radius: 20px;
+  border-width: 2px;
+  font-family: Muli;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .game-div {
+    margin-top: 15%;
+    width: 100%;
+    background-color: skyblue;
+    border-radius: 20px;
+    border-width: 2px;
+    font-family: Muli;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 700;
+  }
+}
+
+.game-button {
+  margin: 10%;
+    width: 210px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-color: white;
+    font-weight: 700;
+    border-style: solid;
 }
 
 .data-button {
     margin: 10%;
-    width: 50px;
-    height: 25px;
+    width: 75px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-color: white;
+    font-weight: 700;
+    border-style: solid;
+}
+
+.data-button:hover {
+  background-color: white;
+  color: rgb(59, 165, 240);
+  border-color: rgb(59, 165, 240);
+}
+
+.heading, .username {
+    font-size: xx-large;
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
     .score-div {
         height: 500px;
-    width: 80%;
-    border-color: red;
+    width: 85%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-style: dashed;
     border-radius: 20px;
     border-width: 2px;
     }
@@ -58,10 +184,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-.heading, .username {
-    text-align: center;
 }
 
 @keyframes growProgressBar {
@@ -99,3 +221,5 @@
     counter-reset: percentage var(--value);
     content: counter(percentage) '%';
   }
+
+  
