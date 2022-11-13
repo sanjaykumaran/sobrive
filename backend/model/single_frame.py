@@ -72,6 +72,8 @@ if filename != None:
     else:
         print("Error encountered in image parsing!")
 
+link = '[Secondary Verification](https://snazzy-stroopwafel-5ea068.netlify.app/game.html)'
+st.markdown(link, unsafe_allow_html=True)
 #import glob
 #jpg_test = glob.glob('image.jpg')
 #png_test = glob.glob('test.png')
