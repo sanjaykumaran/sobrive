@@ -16,7 +16,8 @@ function click_Game() {
         new_time = new Date();
         total_seconds = new_time - old_time;
         if(total_seconds > 0){
-            document.getElementById("game-board").style.backgroundColor = "skyblue";
+            document.getElementById("game-board").style.backgroundColor = "red";
+            document.getElementById("game-board").style.color = "white";
             document.getElementById("game-board").textContent = total_seconds + "ms";
             flag = 2;
         }
