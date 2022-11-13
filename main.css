@@ -225,6 +225,7 @@ html, body {
 
   .calendar {
     margin-top: 5%;
+    margin-bottom: 5%;
     border-color: red;
     display: flex;
     width: 80%;
@@ -292,12 +293,6 @@ a:hover { text-decoration: none; }
 
 
 a:active { text-decoration: none; }
-
-.th {
-  border-radius: 50%;
-  border-width: 2px;
-  border-color: red;
-}
 
 .calendar-title {
   margin: 10%;
