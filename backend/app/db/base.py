@@ -13,7 +13,7 @@ ip = environ.get("DB_IP")
 
 
 engine = create_engine(
-    "mysql+pymysql://{root}:{password}@{ip}:{port}/sobara".format(
+    "mysql+pymysql://{root}:{password}@{ip}:{port}/database_sobrive".format(
         root=root, password=password, ip=ip, port=port
     )
 )
